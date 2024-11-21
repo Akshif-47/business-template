@@ -1,0 +1,202 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    z-index: 100;
+    top: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul li {
+    margin-left: 30px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Hero Section with Parallax */
+.hero {
+    height: 100vh;
+    background:moccasin;
+    position: relative;
+    background-attachment: fixed; /* Parallax effect */
+    color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 2.5s ease-out forwards;
+}
+
+.cta-button {
+    background-color: #ff6f61;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 0;
+    animation: slideUp 2.5s ease-out forwards;
+}
+
+.cta-button:hover {
+    background-color: #e55a50;
+}
+
+/* Services Section */
+.services {
+    background-color: grey;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+.service-card {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: slideUp 2s ease-out forwards;
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+}
+
+/* Hover effect for service cards */
+.service-card:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+.portfolio {
+
+    background-color: lightsalmon;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation delays */
+.fade-in {
+    animation: fadeIn 2s ease-out forwards;
+}
+
+.fade-in.delay-1 {
+    animation-delay: 1s;
+}
+
+.fade-in.delay-2 {
+    animation-delay: 1.5s;
+}
+
+.fade-in.delay-3 {
+    animation-delay: 2s;
+}
+
+.fade-in.delay-4 {
+    animation-delay: 2.5s;
+}
+
+.slide-up {
+    animation: slideUp 1.5s ease-out forwards;
+}
+
+.slide-up.delay-2 {
+    animation-delay: 1s;
+}
+
+.slide-up.delay-3 {
+    animation-delay: 1.5s;
+}
+
+.slide-up.delay-4 {
+    animation-delay: 2s;
+}
