@@ -13,7 +13,7 @@ This is a **Business & Corporate HTML Template** designed for businesses, agenci
 
 ## Demo Link
 
-You can view a live demo of the template [here](https://your-github-pages-link.com). 
+You can view a live demo of the template here https://akshif-47.github.io/business-template/. 
 
 (Note: Replace `your-github-pages-link.com` with your actual GitHub Pages demo link)
 
