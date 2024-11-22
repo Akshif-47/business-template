@@ -4,10 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-header { 
-    width:100%
-    max-width:1200px;
-    margin:0
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -170,13 +167,25 @@ footer {
     }
 }
 @media (max-width: 768px) {
-    header img{
-        width: 80%;
+    header {
+        flex-direction: column;  /* Stack elements vertically on smaller screens */
+        align-items: center;     /* Center content */
     }
-    footer{
-        padding: 15px;
+
+    nav {
+        width: 100%;
+        justify-content: center;
     }
-}
+
+    nav ul {
+        width: 100%;
+        text-align: center;  /* Center the menu items */
+    }
+
+    nav li {
+        margin: 10px 0;  /* Adjust margin for vertical stacking */
+    }
+    }
 /* Animation delays */
 .fade-in {
     animation: fadeIn 2s ease-out forwards;
