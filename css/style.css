@@ -163,7 +163,7 @@ footer {
         transform: translateY(0);
     }
 }
-
+@media (max-width: 768px) 
 /* Animation delays */
 .fade-in {
     animation: fadeIn 2s ease-out forwards;
