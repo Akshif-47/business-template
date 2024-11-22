@@ -4,12 +4,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+header { 
+    width:100%
+    max-width:1200px;
+    margin:0
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
+overflow-x:hidden;
+
 }
 
 /* Navbar Styles */
@@ -163,11 +169,19 @@ footer {
         transform: translateY(0);
     }
 }
-@media (max-width: 768px) 
+@media (max-width: 768px) {
+    header img{
+        width: 80%;
+    }
+    footer{
+        padding: 15px;
+    }
+}
 /* Animation delays */
 .fade-in {
     animation: fadeIn 2s ease-out forwards;
 }
+    
 
 .fade-in.delay-1 {
     animation-delay: 1s;
@@ -200,3 +214,7 @@ footer {
 .slide-up.delay-4 {
     animation-delay: 2s;
 }
+footer {
+    width:100%;
+padding:  20px;
+box-sizing: border-box;
